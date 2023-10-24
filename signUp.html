@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Connexion</title>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="generator" content="Geany 1.36" />
+    <style>
+        body {
+            background: linear-gradient(to right, #1a1a1a, #444444);
+            text-align: center;
+        }
+
+        body div {
+            padding: 4vw;
+        }
+
+        form {
+            margin: 2% 15% auto 15%;
+            padding: 4% 0 4% 0;
+            animation: infinite 8s ease-in-out shadowColor;
+        }
+
+        body div h1 {
+            text-shadow: 0 0 3px #6200EA;
+            color: #FFFFFF;
+            letter-spacing: 0.8vw;
+        }
+
+        #success {
+            color: #1976D2;
+        }
+
+        h3 {
+            color: #D32F2F;
+        }
+
+        input {
+            width: 40%;
+            margin: 1vw;
+            padding: 1.5vw;
+            font-size: 1vw;
+            letter-spacing: 0.5vw;
+            color: #444444;
+        }
+
+        #submit {
+            width: 45.5%;
+            margin: 2vw;
+            padding: 1.5vw;
+        }
+
+        a {
+            display: inline-block;
+            text-decoration: none;
+            margin: 1vw;
+            color: #6200EA;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @keyframes shadowColor {
+            0% {
+                box-shadow: 0px 2px 13px #D32F2F;
+            }
+            25% {
+                box-shadow: 0px 2px 15px #FFAB40;
+            }
+            50% {
+                box-shadow: 0px 2px 15px #4CAF50;
+            }
+            75% {
+                box-shadow: 0px 2px 14px #1976D2;
+            }
+            100% {
+                box-shadow: 0px 2px 17px #9C27B0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <form action="verifyConnect.cgi" method="get">
+            <h1>Connexion</h1>
+            <input type="text" name="nom" placeholder="Nom d'utilisateur" required><br>
+            <input type="password" name="passwd" placeholder="Mot de passe" required><br>
+            <input type="submit" value="Valider" id="submit"><br>
+            <a href="sign.cgi">Vous n'avez pas de compte ? Inscrivez-vous</a>
+        </form>
+    </div>
+</body>
+
+</html>
